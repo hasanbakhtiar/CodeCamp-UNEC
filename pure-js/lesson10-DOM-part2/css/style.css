@@ -1,0 +1,17 @@
+.red{
+    color: red;
+}
+
+.green{
+    color: green;
+}
+h1{
+    width: 400px;
+    height: 100px;
+    background-color: bisque;
+}
+
+.hide{
+    transform: translateX(-400px);
+    transition: .5s;
+}
