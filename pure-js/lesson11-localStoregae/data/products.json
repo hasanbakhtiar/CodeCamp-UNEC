@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "title":"Samsung s24 ultra",
+        "price":3000,
+        "color":"red",
+        "desc":"good"
+    },
+    {
+        "title":"Samsung s24 ultra",
+        "price":3000,
+        "color":"red",
+        "desc":"good"
+    },
+    {
+        "title":"Samsung s24 ultra",
+        "price":3000,
+        "color":"red",
+        "desc":"good"
+    },
+    {
+        "title":"Samsung s24 ultra",
+        "price":3000,
+        "color":"red",
+        "desc":"good"
+    }
+]

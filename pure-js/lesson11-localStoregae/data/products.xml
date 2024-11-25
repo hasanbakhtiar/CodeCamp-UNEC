@@ -1,0 +1,25 @@
+<products>
+
+    <singleproduct id="1">
+    
+        <title>Samsung s24 ultra</title>
+        <prirce>2500</prirce>
+        <color>red</color>
+        <desc>flagship</desc>
+    </singleproduct>
+
+    <singleproduct>
+        <title>Samsung s24 ultra</title>
+        <prirce>2500</prirce>
+        <color>red</color>
+        <desc>flagship</desc>
+    </singleproduct>
+
+    <singleproduct>
+        <title>Samsung s24 ultra</title>
+        <prirce>2500</prirce>
+        <color>red</color>
+        <desc>flagship</desc>
+    </singleproduct>
+
+</products>
