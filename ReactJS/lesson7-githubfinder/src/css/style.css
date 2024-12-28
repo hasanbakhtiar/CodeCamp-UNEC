@@ -1,0 +1,8 @@
+.form-control:focus{
+    border-color:#000 !important;
+    box-shadow:0 0 0 .25rem rgba(0, 0, 0, 0.251) !important;
+}
+
+.swal2-confirm{
+    background-color: #000 !important;
+}
