@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import slugify from "slugify";
-import { removeProduct } from "../../tools/actions/productAction";
+import {  deleteProductToDatabase} from "../../tools/actions/productAction";
 const Dashboard = () => {
   const data = useSelector((p) => p.product);
   const dispatch = useDispatch();
@@ -44,7 +44,7 @@ const Dashboard = () => {
                 <td>
                   <button
                     onClick={() => {
-                      dispatch(removeProduct(item.id));
+                      dispatch(deleteProductToDatabase(item.id));
                     }}
                     className="btn btn-danger"
                   >

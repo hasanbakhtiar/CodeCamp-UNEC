@@ -1,23 +1,43 @@
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
+import supabase from "../../utils/supabase";
 
+export const getProduct = (products) => ({
+  type: "GET_PRODUCT",
+  products,
+});
 
-export const getProduct = ()=>({
-    type: "GET_PRODUCT"
-  })
-export const addProduct = ({img,title,price,desc})=>({
-  type:"ADD_PRODUCT",
-  payload:{
-    id:uuidv4(),
-    img,title,price,desc
+export const addProductToDatabase = async (product) => {
+  const { data, error } = await supabase.from("product-unec").insert(product);
+  if (error) {
+    console.log(error);
+  } else {
+    console.log(data);
+    window.location.assign("/dashboard");
   }
-})
+};
 
-export const removeProduct = (id)=>({
-  type:"REMOVE_PRODUCT",
-  id
-})
+export const editProductToDatabase = async (id, product) => {
+  const { data, error } = await supabase
+    .from("product-unec")
+    .update(product)
+    .eq("id", id);
+  if (error) {
+    console.log(error);
+  } else {
+    console.log(data);
+    window.location.assign("/dashboard");
+  }
+};
 
-export const editProduct = ({id,edit})=>({
-  type:"EDIT_PRODUCT",
-  id,edit
-})
+export const deleteProductToDatabase = async (id) => {
+  const { data, error } = await supabase
+    .from("product-unec")
+    .delete()
+    .eq("id", id);
+  if (error) {
+    console.log(error);
+  } else {
+    console.log(data);
+    window.location.assign("/dashboard");
+  }
+};

@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { Col, Container } from "react-bootstrap";
 import { useDispatch } from "react-redux";
-import { addProduct } from "../../tools/actions/productAction";
 
 const Form = ({comingData, editData }) => {
     const imgRef = useRef();

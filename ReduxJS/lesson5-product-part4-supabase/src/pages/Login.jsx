@@ -51,7 +51,7 @@ const Login = () => {
                             <label className="form-label">Password</label>
                             <input ref={passRef} type="password" className="form-control" />
                         </div>
-                        <button type="submit" className="btn btn-dark">Add</button>
+                        <button type="submit" className="btn btn-dark">Login</button>
                     </form>
 
                 </Col>
